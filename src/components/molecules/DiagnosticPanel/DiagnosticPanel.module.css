@@ -1,0 +1,12 @@
+.panel { padding: 20px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); }
+.header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.header h2 { margin: 5px 0 0; font-size: .95rem; }
+.kicker { color: var(--green); font-family: var(--font-mono); font-size: .65rem; letter-spacing: .1em; }
+.comparison { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 14px; margin-top: 18px; }
+.metric { padding: 15px; border: 1px solid var(--line); border-radius: 12px; background: #090b0a; }
+.metric span, .metric small { display: block; color: var(--muted); font-size: .68rem; }
+.metric strong { display: block; margin: 8px 0; font-family: var(--font-display); font-size: 2rem; }
+.metric small + small { margin-top: 3px; color: var(--green); font-family: var(--font-mono); }
+.arrow { color: var(--muted); }
+.footer { display: flex; justify-content: space-between; gap: 12px; margin-top: 14px; color: var(--muted); font-family: var(--font-mono); font-size: .64rem; }
+@media (max-width: 520px) { .comparison { grid-template-columns: 1fr; } .arrow { text-align: center; transform: rotate(90deg); } .footer { flex-direction: column; } }

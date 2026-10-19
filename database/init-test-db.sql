@@ -1,0 +1,1 @@
+CREATE DATABASE stale_data_detective_test;
